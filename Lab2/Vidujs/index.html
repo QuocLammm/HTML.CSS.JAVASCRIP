@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chorm">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myfunction()" id="btn">Click đi má ơi!!</button>
+    <button type="button" onclick="mfunction()" id="btn">Click đi bồ!!</button>
+    <button type="button" class="btn">Click dô</button>
+    <button type="button" id="btn2">Click </button>
+    <p id="btn-text"></p>
+    <script>
+        function mfunction(){
+            alert('Em cúc đi?')
+        }
+        //hàm mũi tên
+        var myfunction = ()=>{
+            // nội dung hàm
+            alert('Em cúc đi đi?')
+        }
+        //hàm mũi tên 
+        //document.querySelector('.btn').addEventListener('click',() =>{
+            // code đi
+            //alert('I love you you love I !! hihi !!')
+        //})
+        //hàm mũi tên
+        document.querySelector('.btn').addEventListener('click',() =>{
+            document.getElementById("btn-text").innerText="Weooooooooo!";
+        })
+
+        // cách 3 hàm không tê thông qua sự kiện
+        document.getElementsById(".btn2").onclick=function(){
+            alert('Nào Nào!!!')
+        }
+    </script>
+</body>
+</html>

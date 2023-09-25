@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <form class="login-form">
+		<h1>Form đăng nhập</h1>
+		<label for="username">Tên đăng nhập</label>
+		<input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập " required>
+		<label for="password">Password</label>
+		<input type="password" class="password" name="password" placeholder="Vui lòng nhập mật khẩu!" required>
+        <ion-icon class="icon" name="eye-outline"></ion-icon>
+        <!--<ion-icon class="icon" name="eye-off-outline"></ion-icon>-->
+		<button type="submit">Login</button>
+        <script>
+            let pass_text = document.querySelector('.password');
+            let pass_icon=document.querySelector('.icon');
+            pass_icon.addEventListener('click',()=>{
+                if(pass_text.type=='password'){
+                    pass_text.type='text';
+                    pass_icon.setAttribute('name','eye-outline');
+                }
+                else{
+                    pass_text.type='password';
+                    pass_icon.setAttribute('name','eye-off-outline');
+                }
+            })
+
+        </script>
+	</form>
+</body>
+</html>

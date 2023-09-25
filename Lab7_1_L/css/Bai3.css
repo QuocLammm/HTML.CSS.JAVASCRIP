@@ -1,0 +1,17 @@
+form{
+    display: block;
+}
+
+.sdt{
+    margin: 10px 20px;
+}
+input{
+    display: block;
+}
+.m{
+    margin: 10px 20px;
+}
+button{
+    text-align: center;
+    margin: 10px 70px;
+}

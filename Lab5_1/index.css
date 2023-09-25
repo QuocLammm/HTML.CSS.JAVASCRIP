@@ -1,0 +1,218 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container-full{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.nav-menu{
+    background-color: black;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+}
+.nav-menu h2{
+    font-size: 23px;
+}
+
+.nav-menu img{
+    width: 120px;
+    height: 120px;
+    border: 8px solid #555;
+    border-radius: 100rem;
+}
+
+.nav-menu h5{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    text-align: center;
+
+}
+
+.icon{
+    display: flex;
+    margin: 15px 40px;
+    justify-content: space-between;
+}
+.menu li{
+    margin: 20px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.menu li i{
+    margin: 10px;
+    list-style-type: none;
+}
+
+.menu li :hover{
+    color: blue;
+}
+
+.menu li a{
+    text-decoration: none;
+    justify-content: space-evenly;
+    color: aliceblue;
+}
+.container-right{
+    position: absolute;
+    width: 80%;
+    right: 0;
+}
+
+.header-title{
+    padding: 15px;
+}
+
+p{
+    padding: 15px 0px;
+}
+
+.header-title h2{
+    color: black;
+    font-size: 28px;
+    padding: 15px 0px;
+}
+
+.header-title hr{
+    margin: 10px 0px;
+    height: 3px;
+    background-color: blue;
+    border: none;
+}
+
+.box-about{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    column-gap: 30px;
+    padding-left: 15px;
+
+}
+
+.box-about img{
+    width: 100%;
+    height: 45vh;
+}
+.box-content{
+    display: block;
+}
+
+h3{
+    color: black;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.box-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: 15px 0px;
+}
+.box-info li{
+    list-style-type: none;
+}
+
+.box-info li span{
+    font-weight: bold;
+}
+
+.box-info li i{
+    padding-right:5px ;
+    color: rgba(63, 63, 233, 0.641);
+}
+
+.container-blue{
+    background-color: #fff;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+.header-title p{
+    width: 100%;
+}
+
+.box-fact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+    margin: 20px;
+}
+
+.box-fact li{
+    list-style-type: none;
+    display: flex;
+}
+
+.box-fact li h3{
+    font-size: 30px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.box-fact li i{
+    font-size: 50px;
+    color: blue;
+    padding-right: 10px;
+}
+
+.box-fact li p{
+    padding: 5px 0px;
+    font-size: 12px;
+}
+
+.box-fact li span{
+    font-weight: bold;
+}
+
+.resum{
+    margin-top: 50px;
+}
+
+.box-resum{
+    padding-left: 15px;
+}
+
+.box-resum h3{
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+.box-resum h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+.box-content-resum{
+    border-left: 2px solid blue;
+    padding-left: 15px;
+}
+
+.box-content-resum li{
+    list-style-type: disc;
+    margin-left: 14px;
+    padding: 7px 0px;
+}
+
+.box-content-resum h5{
+    font-style: italic;
+}

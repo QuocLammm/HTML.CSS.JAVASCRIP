@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    margin: auto 20px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+    width: 80%;
+}
+
+.nav img{
+    width: 25%;
+}
+
+.search {
+    align-items: center;
+    position: relative;
+    right: 0;
+    background-color: #fff;
+    border-radius: 100rem;
+    border: 2px solid #34c740d4;
+    padding: 5px 10px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.search #box {
+    min-width: 700px;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    transition: all .25 ease-in-out;
+}
+
+
+.search #btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+.search i {
+    padding: 5px;
+    color: gray;
+}
+
+.contact{
+    display: -webkit-inline-box;
+    position: relative;
+    margin: auto 0;
+}
+
+.container{
+    margin: 0 20px;
+    border: 1px solid rgba(128, 128, 128, 0.268);
+    display: flex;
+}
+
+.menu-box{
+    border-right: 1px solid rgba(128, 128, 128, 0.347);
+    line-height: 3;
+    width: 30%;
+}
+.logo-menu{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.logo-menu h2{
+    text-transform:uppercase;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.logo-menu i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.menu-box img{
+    width: 10px;
+    margin-right: 5px;
+}
+
+.menu-box li{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.296);
+    padding: 0 20px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.menu-box a{
+    color: #000;
+}
+
+.menu-box li:hover
+{
+    background: aliceblue;
+
+}
+
+.menu-box li:hover a{
+    color: #4ae7577e;
+}
+
+.content{
+    width: 70%;
+    height: 555px;
+}
+
+.content .menu-box{
+    display: inline;
+}
+.content .menu-box ul{
+    display: flex;
+    margin: 0 5px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s;
+}
+
+.content .menu-box li{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+}
+.content .menu-box i{
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.content .menu-box li ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+    border-top: 2px solid #39da46b2;
+    display: none;
+    background: #fff;
+}
+
+.content .menu-box li ul li{
+    text-align: left;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+
+}
+
+.content .menu-box li ul li:hover{
+    color: #48de55c8;
+}
+
+.content .menu-box li:hover ul{
+    display: block;
+}
+
+.banner{
+    background: url(./images/home3.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: -48px;
+    z-index: -99;
+    text-align: center;
+    display: block;
+    padding-top: 15%;
+    line-height: 1;
+}
+#design{
+    font-weight: 100;
+    font-size: 30px;
+    color: #0000008b;
+}
+#home{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.banner button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#buy{
+    background: #3dba08;
+    color: #fff;
+}
+
+
+.container-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+

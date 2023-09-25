@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Cao Nguyễn Quốc Lâm</title>
+</head>
+<body>
+    <form>
+        <h2>Form tính toán</h2>
+        <ul>
+            <li>
+                <span class="lable">a:</span>
+                <input type="text" class="value" id="a">
+            </li>
+            <li>
+                <span class="lable">b:</span>
+                <input type="text" class="value" id="b">
+            </li>
+            <li class="df">
+                <span class="lable">Kết quả:</span>
+                <input type="text" class="value" id="kq" readonly>
+            </li>
+            <div class="pan">
+                <li>
+                    <button class="btn" type="button" onclick="Tong()">+</button>
+                    <button class="btn" type="button" onclick="Tru()">-</button>
+                    <button class="btn" type="button" onclick="Nhan()">*</button>
+                    <button class="btn" type="button" onclick="Chia()">/</button>
+                    <button class="btn" type="button" onclick="Reset()">Reset</button>
+                </li>
+            </div>
+        </ul>
+        <p id="log"></p>
+    </form>
+</body>
+</html>
